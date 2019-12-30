@@ -119,24 +119,17 @@ async def pipcheck(pip):
         await pip.edit("`Use .help pip to see an example`")
 
 
-@register(outgoing=True, pattern="^.on$")
+@register(outgoing=True, pattern="^.alive$")
 async def amireallyalive(on):
     """ For .on command, check if the bot is running.  """
-    await on.edit("`"
-                     "i am ON My Mastor \n\n"
-                     " \n\n"
-                     "botdo is ON \n\n"
-                     f"Telethon version: {version.__version__} \n"
-                     f"Python: {python_version()} \n"
-                     f"------------------------------------ \n"
-                     f"User: {DEFAULTUSER} \n"
-                     " \n\n"
-                     f"Creator: Mayur Karaniya \n"
-                     " \n\n"
-                     f"Owner: 3Cube TeKnoways \n"
-                     " \n\n"
-                     f"Userbot: testuserbot "
-                     "`")    
+    await on.edit(
+                      "`Hi Guys... My UserBug Is Running...` \n\n"
+                     f"Telethon: `{version.__version__}` \n"
+                     f"Python: `{python_version()}` \n"
+                     f"<•><-><•><-><•><-><•><-><•><-><•> \n"
+                     f"Name: `{DEFAULTUSER}` \n"
+                     f"About: 17.y.o, Just Normal People"
+                   )    
 
 
 

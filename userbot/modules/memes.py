@@ -937,9 +937,9 @@ async def Oof(e):
         await e.edit(t)
 
 
-@register(outgoing=True, pattern="^.10iq$")
+@register(outgoing=True, pattern="^.fuck$")
 async def iqless(e):
-    await e.edit("♿")
+    await e.edit("🖕🖕🖕🖕🖕🖕🖕🖕\n🖕🖕🖕🖕🖕🖕🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕🖕🖕🖕🖕\n🖕🖕🖕🖕🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕\🖕🖕;")
 
 
 @register(outgoing=True, pattern="^.moon$")
@@ -1267,8 +1267,8 @@ CMD_HELP.update({
 \nUsage: Vaporize everything!\
 \n\n.str\
 \nUsage: Stretch it.\
-\n\n.10iq\
-\nUsage: You retard !!\
+\n\n.fuck\
+\nUsage: You retard, FUCK !!\
 \n\n.zal\
 \nUsage: Invoke the feeling of chaos.\
 \n\nOof\

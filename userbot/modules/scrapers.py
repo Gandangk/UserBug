@@ -43,8 +43,8 @@ from telethon.tl.types import DocumentAttributeAudio
 from userbot.modules.upload_download import progress, humanbytes, time_formatter
 
 CARBONLANG = "auto"
-TTS_LANG = "en"
-TRT_LANG = "en"
+TTS_LANG = "id"
+TRT_LANG = "id"
 
 
 @register(outgoing=True, pattern="^.crblang (.*)")
@@ -570,10 +570,11 @@ async def download_video(v_url):
             True,
             'postprocessors': [{
                 'key': 'FFmpegExtractAudio',
-                'preferredcodec': 'flac',
+                'preferredcodec': 'mp3',
+                'preferredquality': '480',
             }],
             'outtmpl':
-            '%(id)s.flac',
+            '%(id)s.mp3 ',
             'quiet':
             True,
             'logtostderr':
@@ -598,7 +599,7 @@ async def download_video(v_url):
             True,
             'postprocessors': [{
                 'key': 'FFmpegVideoConvertor',
-                'preferedformat': 'mp4'
+                'preferedformat': 'mp4'         
             }],
             'outtmpl':
             '%(id)s.mp4',

@@ -936,15 +936,21 @@ async def Oof(e):
         t = t[:-1] + "of"
         await e.edit(t)
 
-
-@register(outgoing=True, pattern="^.fuck$")
-async def iqless(e):
-    await e.edit("🖕🖕🖕🖕🖕🖕🖕🖕\n🖕🖕🖕🖕🖕🖕🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕🖕🖕🖕🖕\n🖕🖕🖕🖕🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕\🖕🖕;")
-
-
 @register(outgoing=True, pattern="^.moon$")
 async def moon(event):
     deq = deque(list("🌗🌘🌑🌒🌓🌔🌕🌖"))
+    try:
+        for x in range(32):
+            await sleep(0.1)
+            await event.edit("".join(deq))
+            deq.rotate(1)
+    except BaseException:
+        return
+
+
+@register(outgoing=True, pattern="^.car$")
+async def moon(event):
+    deq = deque(list("▰▱🚛▱▰🚙▰▱🚗"))
     try:
         for x in range(32):
             await sleep(0.1)
@@ -1267,8 +1273,8 @@ CMD_HELP.update({
 \nUsage: Vaporize everything!\
 \n\n.str\
 \nUsage: Stretch it.\
-\n\n.fuck\
-\nUsage: You retard, FUCK !!\
+\n\n.car\
+\nUsage: car animation.\
 \n\n.zal\
 \nUsage: Invoke the feeling of chaos.\
 \n\nOof\

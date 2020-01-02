@@ -89,8 +89,8 @@ async def ambiladzan(adzan1):
                  f"**Di {lokasi}, {lokasi2}, {lokasi3}, {lokasi4}.**\n\n" +
                  f"**Subuh**: {subuh}\n" +
                  f"**Terbit**: {syuruk}\n" +
-                 f"""Dzuhur**: {zuhur}\n" +
-                 f"""Ashar"": {ashar}\n" +
+                 f"**Dzuhur**: {zuhur}\n" +
+                 f"**Ashar**: {ashar}\n" +
                  f"**Maghrib**: {maghrib}\n" +
                  f"**Isya**: {isya}\n")
 

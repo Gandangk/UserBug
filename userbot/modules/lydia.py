@@ -4,8 +4,10 @@
 # you may not use this file except in compliance with the License.
 # credit goes to @snapdragon and @devpatel_73 for making it work on this userbot.
 #
+# Original author of the UniBorg module 'lydia' @Zero_cool7870 (Jaskaran)
+#
 """
-Userbot module to help you manage a group
+Userbot module to use an AI To respond to people
 """
 
 import coffeehouse
@@ -100,4 +102,3 @@ CMD_HELP.update({
 \n\n.repcf <username/reply>\
 \nUsage: starts lydia repling to perticular person in the chat."
 })
-

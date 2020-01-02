@@ -41,14 +41,14 @@ async def get_adzan(adzan):
     maghrib = result["items"][0]["maghrib"]
     isya = result["items"][0]["isha"]
 
-    textkirim = (f"⏱  **Jadwal Sholat Pada ** `{tanggal}`:\n" +
-                 f"`{lokasi} | {lokasi2} | {lokasi3} | {lokasi4}`\n\n" +
-                 f"**Subuh :** `{subuh}`\n" +
-                 f"**Syuruk :** `{syuruk}`\n" +
-                 f"**Zuhur :** `{zuhur}`\n" +
-                 f"**Ashar :** `{ashar}`\n" +
-                 f"**Maghrib :** `{maghrib}`\n" +
-                 f"**Isya :** `{isya}`\n")
+    textkirim = (f"⏱**Jadwal Sholat** \nPada Tanggal: {tanggal}:\n" +
+                 f"Di: {lokasi}, {lokasi2}, {lokasi3}, {lokasi4}\n\n" +
+                 f"Subuh: `{subuh}`\n" +
+                 f"Terbit: `{syuruk}`\n" +
+                 f"Dzuhur: `{zuhur}`\n" +
+                 f"Ashar: `{ashar}`\n" +
+                 f"Maghrib: `{maghrib}`\n" +
+                 f"Isya: `{isya}`\n")
 
     await adzan.edit(textkirim)
 
@@ -85,14 +85,14 @@ async def ambiladzan(adzan1):
         maghrib = result["items"][0]["maghrib"]
         isya = result["items"][0]["isha"]
 
-        textkirim = (f"⏱  **Jadwal Sholat Pada ** `{tanggal}`:\n" +
-                     f"`{lokasi} | {lokasi2} | {lokasi3} | {lokasi4}`\n\n" +
-                     f"**Subuh :** `{subuh}`\n" +
-                     f"**Syuruk :** `{syuruk}`\n" +
-                     f"**Zuhur :** `{zuhur}`\n" +
-                     f"**Ashar :** `{ashar}`\n" +
-                     f"**Maghrib :** `{maghrib}`\n" +
-                     f"**Isya :** `{isya}`\n")
+        textkirim = (f"⏱**Jadwal Sholat** \nPada Tanggal: {tanggal}:\n" +
+                 f"Di: {lokasi}, {lokasi2}, {lokasi3}, {lokasi4}\n\n" +
+                 f"Subuh: `{subuh}`\n" +
+                 f"Terbit: `{syuruk}`\n" +
+                 f"Dzuhur: `{zuhur}`\n" +
+                 f"Ashar: `{ashar}`\n" +
+                 f"Maghrib: `{maghrib}`\n" +
+                 f"Isya: `{isya}`\n")
 
         await adzan1.reply(textkirim)
 
@@ -128,18 +128,18 @@ async def ambiladzan(adzan12):
         maghrib = result["items"][0]["maghrib"]
         isya = result["items"][0]["isha"]
 
-        textkirim = (f"⏱  **Jadwal Sholat Pada ** `{tanggal}`:\n" +
-                         f"`{lokasi} | {lokasi2} | {lokasi3} | {lokasi4}`\n\n" +
-                         f"**Subuh :** `{subuh}`\n" +
-                         f"**Syuruk :** `{syuruk}`\n" +
-                         f"**Zuhur :** `{zuhur}`\n" +
-                         f"**Ashar :** `{ashar}`\n" +
-                         f"**Maghrib :** `{maghrib}`\n" +
-                         f"**Isya :** `{isya}`\n")
+        textkirim = (f"⏱**Jadwal Sholat** \nPada Tanggal: {tanggal}:\n" +
+                 f"Di: {lokasi}, {lokasi2}, {lokasi3}, {lokasi4}\n\n" +
+                 f"Subuh: `{subuh}`\n" +
+                 f"Terbit: `{syuruk}`\n" +
+                 f"Dzuhur: `{zuhur}`\n" +
+                 f"Ashar: `{ashar}`\n" +
+                 f"Maghrib: `{maghrib}`\n" +
+                 f"Isya: `{isya}`\n")
 
         await adzan12.reply(textkirim)
 
 CMD_HELP.update({
         "adzan": ".adzan <city> or .adzan <country>\
-        \nUsage: Gets the prayer time for moslem.\n"
+        \nUsage: Gets the prayer time for muslim.\n"
     })

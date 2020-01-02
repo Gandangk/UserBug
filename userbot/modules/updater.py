@@ -57,7 +57,7 @@ async def upstream(ups):
         )
         origin = repo.create_remote('upstream', off_repo)
         origin.fetch()
-        repo.create_head('sql-extended', origin.refs.master)
+        repo.create_head('master', origin.refs.master)
         repo.heads.master.checkout(True)
 
     ac_br = repo.active_branch.name
@@ -82,7 +82,7 @@ async def upstream(ups):
         return
 
     if conf != "now":
-        changelog_str = f'**New UPDATE available for [{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`'
+        changelog_str = f'**New UPDATE available for [{ac_br}]:\n\nCHANGELOG:**\n{changelog}'
         if len(changelog_str) > 4096:
             await ups.edit("`Changelog is too big, sending it as a file.`")
             file = open("output.txt", "w+")

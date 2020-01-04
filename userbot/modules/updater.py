@@ -100,10 +100,10 @@ async def upstream(ups):
             "`do \".update now\" to update\nDon't if using Heroku`")
         return
 
-    await ups.edit('`New update found, updating...`')
+    await ups.edit('`New update found, deploying...`')
     ups_rem.fetch(ac_br)
-    await ups.edit('`Successfully Updated!\n'
-                   'Bot is restarting... Wait for a second!`')
+    await ups.edit('`Successfully Deploying!\n'
+                   'Wait about 5 minutes!`')
     await install_requirements()
     await bot.disconnect()
     # Spin a new instance of bot

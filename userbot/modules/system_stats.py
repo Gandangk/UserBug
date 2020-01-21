@@ -124,6 +124,13 @@ async def amireallyalive(on):
     """ For .on command, check if the bot is running.  """
     await on.edit(
                       "🤖 **Alive!!** \n\n"
+                     f"
+ _____      _
+|  ___|_ _ (_) __ _ _ __
+| |_ / _` || |/ _` | '__|
+|  _| (_| || | (_| | |
+|_|  \__,_|/ |\__,_|_|
+         |__/ \n\n"
                      f"**-------------------------**\n"
                      f"Telethon: `v{version.__version__}` \n"
                      f"Python: `v{python_version()}` \n"

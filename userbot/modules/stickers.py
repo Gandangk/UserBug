@@ -19,12 +19,12 @@ from telethon.tl.types import InputStickerSetID
 from telethon.tl.types import DocumentAttributeSticker
 
 KANGING_STR = [
-    "h3h3 gue mintak tikel lu ya cok. \n h3h3.",
-    "Anjing tetek siapa itu gede banget (☉｡☉)!→\ntapi boong, kang dulu ah...",
-    "Roses are red violets are blu,\nbesok gue peled, banyak bacot sih lu asu",
-    "Lu Gay sih, Maka nya Sticker Lu Gue Colong...",
-    "Mampus, \nTikel \nLu \nGue \nColong \nCok... ",
-]
+    "H3h3 gue mintak tikel lu ya cok.h3h3.",
+    "Kang dulu ah...",
+    "Roses are red violets are blue,\nBesok gue peled, banyak bacot sih lu sue",
+    "Kang adalah bentuk apresiasi,tanpa tanda jasa...",
+  ]
+
 
 
 @register(outgoing=True, pattern="^.kang")

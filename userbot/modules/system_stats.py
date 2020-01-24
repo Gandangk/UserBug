@@ -123,14 +123,15 @@ async def pipcheck(pip):
 async def amireallyalive(on):
     """ For .on command, check if the bot is running.  """
     await on.edit(
-                      "🤖 **Alive!!** \n\n"
-                     f"**-------------------------**\n"
-                     f"Telethon: `v{version.__version__}` \n"
-                     f"Python: `v{python_version()}` \n"
-                     f"**-------------------------**\n"
-                     f"Name: `{DEFAULTUSER}` \n"
-                     f"Repo: [UserBug Indonesia](https://github.com/MuhamadFajarGaray/UserBug)\n"
-                     f"**-------------------------**\n\n"
+                      "🆔 Userbot Is Alive!! \n"
+                     f"Presented by: [Heroku](https://www.heroku.com) \n\n"
+                     f"**------------------------------**\n"
+                     f"Telethon Ver: `{version.__version__}` \n"
+                     f"Python Ver: `{python_version()}` \n"
+                     f"**------------------------------**\n"
+                     f"User Name: `{DEFAULTUSER}` \n"
+                     f"Repo Link: [UserBug Indonesia](https://github.com/MuhamadFajarGaray/UserBug)\n"
+                     f"**------------------------------**\n\n"
                      f"Type `.help` for some goodies...\n"
                   )    
 

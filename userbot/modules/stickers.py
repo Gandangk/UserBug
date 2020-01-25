@@ -21,8 +21,11 @@ from telethon.tl.types import DocumentAttributeSticker
 KANGING_STR = [
     "H3h3 gue mintak tikel lu ya cok.h3h3.",
     "Kang dulu ah...",
-    "Roses are red violets are blue,\nBesok gue peled, banyak bacot sih lu sue",
+    "Roses are red violets are blue,\nBesok gue peled, banyak bacot lu sue",
     "Kang adalah bentuk apresiasi,tanpa tanda jasa...",
+    "Kamu diem aja,\nNanti kakak jajanin",
+    "Sticker kamu bagus,\nSaya mintak ya...",
+    "Dua Tiga Kayu Bakar,\nMemeq Cyna Mekar-Mekar",
   ]
 
 

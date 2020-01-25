@@ -946,11 +946,23 @@ async def moon(event):
             deq.rotate(1)
     except BaseException:
         return
+                      
+
+@register(outgoing=True, pattern="^.monkey$")
+async def moon(event):
+    deq = deque(list("🙉🙊🙈🙉🙊🙈🙉🙊🙈"))
+    try:
+        for x in range(32):
+            await sleep(0.1)
+            await event.edit("".join(deq))
+            deq.rotate(1)
+    except BaseException:
+        return
 
 
 @register(outgoing=True, pattern="^.car$")
 async def moon(event):
-    deq = deque(list("▱🚛▱🚙▱🚗▱🐛▱🏍️▱🚕▱🚌▱🛵"))
+    deq = deque(list("__🚛__🚙__🚗__🏍️__🚌__🛵__🚕__🚓"))
     try:
         for x in range(32):
             await sleep(0.1)
@@ -1283,6 +1295,8 @@ CMD_HELP.update({
 \nUsage: Facepalm :P\
 \n\n.moon\
 \nUsage: kensar moon animation.\
+\n\n.monkey\
+\nUsage: Monyet animation.\
 \n\n.clock\
 \nUsage: kensar clock animation.\
 \n\n.hi\

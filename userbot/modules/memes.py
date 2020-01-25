@@ -962,7 +962,7 @@ async def moon(event):
 
 @register(outgoing=True, pattern="^.car$")
 async def moon(event):
-    deq = deque(list("__🚛__🚙__🚗__🏍️__🚌__🛵__🚕__🚓"))
+    deq = deque(list("_🚛_🚙_🚗_🏍️_🚌_🛵_🚕_🚓"))
     try:
         for x in range(32):
             await sleep(0.1)

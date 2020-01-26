@@ -1188,11 +1188,10 @@ async def nih(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("`\n(\_/)`"
                      "`\n(●_●)`"
-                     "\n >🌹  *ini buat kamu"
-                     "`\n                    `"
-                     "`\n(\_/)`"
+                     "`\n >🌹  *Ini buat kamu`")
+                     "`\n\n(\_/)`"
                      "`\n(●_●)`"
-                     "`\n🌹<\  *tapi boong`")
+                     "`\n🌹<\  *Tapi boong`")
 
 
 @register(outgoing=True, pattern="^.fag$")  

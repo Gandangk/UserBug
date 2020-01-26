@@ -1,5 +1,5 @@
 #this module original created by @spechide
-#port to useebot by @afdulfauzan
+#port to userbot by @afdulfauzan
 
 from telethon.tl import functions, types
 from userbot.events import register

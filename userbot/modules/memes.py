@@ -962,7 +962,7 @@ async def moon(event):
 
 @register(outgoing=True, pattern="^.car$")
 async def moon(event):
-    deq = deque(list("_🚛_🚙_🚗_🏍️_🚌_🛵_🚕_🚓"))
+    deq = deque(list("_🚛_🚙_🚗_🏍️"))
     try:
         for x in range(32):
             await sleep(0.1)
@@ -1187,11 +1187,11 @@ async def gtfo(e):
 async def nih(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("`\n(\_/)`"
-                     "`\n( •_•)`"
+                     "`\n(•_•)`"
                      "\n >🌹  *ini buat kamu"
                      "`\n                    `"
                      "`\n(\_/)`"
-                     "`\n( •_•)`"
+                     "`\n(•_•)`"
                      "`\n🌹<\  *tapi boong`")
 
 
